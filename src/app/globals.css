@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #0a0a0a;
+  --color-foreground: #ededed;
+  
+  --color-primary: #3b82f6; /* Blue */
+  --color-secondary: #8b5cf6; /* Violet */
+  --color-accent: #10b981; /* Emerald */
+  
+  --color-neon-blue: #00f3ff;
+  --color-neon-purple: #bc13fe;
+  --color-neon-green: #39ff14;
+
+  --shadow-neon: 0 0 10px rgba(0, 243, 255, 0.5), 0 0 40px rgba(0, 243, 255, 0.2);
+  --shadow-neon-purple: 0 0 10px rgba(188, 19, 254, 0.5), 0 0 40px rgba(188, 19, 254, 0.2);
+
+  --font-sans: "Inter", var(--font-geist-sans), sans-serif;
+  --font-mono: "Fira Code", var(--font-geist-mono), monospace;
+}
+
+@layer base {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    @apply antialiased selection:bg-neon-blue/30;
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/5 backdrop-blur-md border border-white/10 shadow-xl;
+  }
+
+  .glow-text {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-neon-purple drop-shadow-[0_0_8px_rgba(0,243,255,0.5)];
+  }
+
+  .cyber-button {
+    @apply relative px-6 py-2 bg-transparent border border-neon-blue text-neon-blue font-mono uppercase tracking-widest overflow-hidden transition-all duration-300 hover:text-black hover:bg-neon-blue hover:shadow-neon;
+  }
+
+  .skills-orbit-chip {
+    animation: skillsFloat 5.2s ease-in-out infinite;
+  }
+
+  .skills-shimmer {
+    background-size: 200% 100%;
+    animation: skillsShimmer 2.8s linear infinite;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-background;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-white/10 rounded-full hover:bg-neon-blue/50 transition-colors;
+}
+
+/* Terminal typing animation */
+.typing-cursor::after {
+  content: "|";
+  @apply animate-pulse text-neon-blue;
+}
+
+@keyframes skillsFloat {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes skillsShimmer {
+  from {
+    background-position: 0% 50%;
+  }
+  to {
+    background-position: 200% 50%;
+  }
+}

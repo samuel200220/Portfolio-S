@@ -1,0 +1,38 @@
+[
+    {
+        "id": "farcal",
+        "title": "FARCAL",
+        "description": "Plateforme intelligente de calcul de tarifs urbains.",
+        "tech": [
+            "Next.js",
+            "Spring Boot",
+            "PostgreSQL"
+        ],
+        "image": "/farcal.png",
+        "link": "https://github.com/samuel200220/FARE_CALCULATOR_WEB_APP"
+    },
+    {
+        "id": "shopecart",
+        "title": "SHOPECART",
+        "description": "Plateforme e-commerce d'appareils électroniques.",
+        "tech": [
+            "React",
+            "Spring Boot",
+            "MySQL"
+        ],
+        "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=600&auto=format&fit=crop",
+        "link": "https://github.com/Prog-Web-4GI-ENSPY/Shopecart-Web-Project"
+    },
+    {
+        "id": "xccm1",
+        "title": "XCCM1",
+        "description": "Plateforme de création de cours.",
+        "tech": [
+            "Java",
+            "PostgreSQL",
+            "Next.js"
+        ],
+        "image": "/xccm1.png",
+        "link": "https://github.com/Prrojet-XCCM1/FrontendXCCM12027"
+    }
+]
