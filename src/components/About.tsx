@@ -36,11 +36,11 @@ export default function About() {
               viewport={{once: true}}
               className="group relative mx-auto"
             >
-              <div className="absolute -inset-2 rounded-[2rem] bg-gradient-to-r from-neon-blue/30 to-neon-purple/20 blur-2xl opacity-60 transition duration-700 group-hover:opacity-90" />
+              <div className="absolute -inset-2 rounded-[2rem] bg-gradient-to-r from-sky-200/80 to-fuchsia-200/60 blur-2xl opacity-60 transition duration-700 group-hover:opacity-90" />
               <motion.div
                 whileHover={{y: -6, rotate: -1}}
                 transition={{duration: 0.35}}
-                className="relative h-72 w-72 overflow-hidden rounded-[2rem] border border-white/10 bg-zinc-900"
+                className="relative h-72 w-72 overflow-hidden rounded-[2rem] border border-slate-200/80 bg-white/80 dark:border-slate-700/80 dark:bg-slate-900/80"
               >
                 <Image
                   src="/Samuel.jpg"
@@ -50,11 +50,11 @@ export default function About() {
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                   priority
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-white/5 via-transparent to-transparent" />
                 <motion.div
                   animate={{y: [0, -4, 0]}}
                   transition={{duration: 3.5, repeat: Infinity, ease: "easeInOut"}}
-                  className="absolute bottom-5 left-5 rounded-full border border-white/10 bg-black/45 px-4 py-2 text-xs font-mono uppercase tracking-[0.2em] text-zinc-200 backdrop-blur-md"
+                  className="absolute bottom-5 left-5 rounded-full border border-slate-200/80 bg-white/78 px-4 py-2 text-xs font-mono uppercase tracking-[0.2em] text-slate-700 backdrop-blur-md dark:border-slate-700/80 dark:bg-slate-900/78 dark:text-slate-200"
                 >
                   Samuel Sean
                 </motion.div>
@@ -68,11 +68,11 @@ export default function About() {
               viewport={{once: true}}
               className="text-center md:text-left"
             >
-              <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-mono uppercase tracking-[0.24em] text-neon-blue/80">
+              <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-slate-200/80 bg-white/75 px-4 py-1.5 text-xs font-mono uppercase tracking-[0.24em] text-neon-blue/80 dark:border-slate-700/80 dark:bg-slate-900/80">
                 <Sparkles size={14} /> {t("badge")}
               </div>
               <h2 className="mb-4 inline-block text-3xl font-bold glow-text md:text-4xl">{t("title")}</h2>
-              <p className="mb-6 leading-relaxed text-zinc-400">{t("description")}</p>
+              <p className="mb-6 leading-relaxed text-slate-600 dark:text-slate-300">{t("description")}</p>
               <div className="mb-6 flex flex-wrap justify-center gap-3 md:justify-start">
                 {highlights.map((item, idx) => (
                   <motion.span
@@ -82,17 +82,17 @@ export default function About() {
                     transition={{delay: 0.15 + idx * 0.07}}
                     viewport={{once: true}}
                     whileHover={{y: -2}}
-                    className="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-mono uppercase tracking-[0.18em] text-zinc-300"
+                    className="rounded-full border border-slate-200/80 bg-white/75 px-3 py-1.5 text-xs font-mono uppercase tracking-[0.18em] text-slate-700 dark:border-slate-700/80 dark:bg-slate-900/80 dark:text-slate-200"
                   >
                     {item}
                   </motion.span>
                 ))}
               </div>
               <div className="flex flex-wrap justify-center gap-4 md:justify-start">
-                <motion.div whileHover={{y: -2}} className="flex items-center gap-2 text-sm text-zinc-500">
+                <motion.div whileHover={{y: -2}} className="flex items-center gap-2 text-sm text-slate-500 dark:text-slate-400">
                   <MapPin size={16} className="text-neon-blue" /> {t("location")}
                 </motion.div>
-                <motion.div whileHover={{y: -2}} className="flex items-center gap-2 text-sm text-zinc-500">
+                <motion.div whileHover={{y: -2}} className="flex items-center gap-2 text-sm text-slate-500 dark:text-slate-400">
                   <GraduationCap size={16} className="text-neon-blue" /> {t("schoolShortcut")}
                 </motion.div>
               </div>
@@ -112,7 +112,7 @@ export default function About() {
                   whileHover={{x: 6}}
                   className="glass group relative overflow-hidden rounded-[1.5rem] p-6"
                 >
-                  <div className="absolute inset-0 bg-gradient-to-r from-neon-blue/5 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+                  <div className="absolute inset-0 bg-gradient-to-r from-sky-100/90 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                   <div className="relative flex items-start gap-4">
                     <motion.div
                       whileHover={{rotate: -6, scale: 1.05}}
@@ -122,11 +122,11 @@ export default function About() {
                     </motion.div>
                     <div>
                       <span className="text-sm font-mono text-neon-blue/60">{item.year}</span>
-                      <h4 className="text-lg font-bold text-white transition-colors group-hover:text-neon-blue">
+                      <h4 className="text-lg font-bold text-slate-900 transition-colors group-hover:text-neon-blue">
                         {item.title}
                       </h4>
-                      <p className="mb-2 text-sm font-medium text-zinc-400">{item.institution}</p>
-                      <p className="text-sm text-zinc-500">{item.desc}</p>
+                      <p className="mb-2 text-sm font-medium text-slate-600">{item.institution}</p>
+                      <p className="text-sm text-slate-500">{item.desc}</p>
                     </div>
                   </div>
                 </motion.div>

@@ -71,7 +71,7 @@ export default function Skills() {
   const categories = t.raw("categories") as Record<string, Category>;
 
   return (
-    <section id="skills" className="overflow-hidden bg-zinc-950/50 py-24">
+    <section id="skills" className="overflow-hidden bg-sky-50/40 py-24 dark:bg-transparent">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{opacity: 0, y: 20}}
@@ -80,11 +80,11 @@ export default function Skills() {
           viewport={{once: true}}
           className="mb-16 text-center"
         >
-          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-mono uppercase tracking-[0.28em] text-neon-blue/80">
+          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-slate-200/80 bg-white/75 px-4 py-1.5 text-xs font-mono uppercase tracking-[0.28em] text-neon-blue/80 dark:border-white/10 dark:bg-white/[0.04]">
             <Sparkles size={14} /> {t("badge")}
           </div>
           <h2 className="mb-4 text-3xl font-bold glow-text md:text-5xl">{t("title")}</h2>
-          <p className="mx-auto max-w-3xl leading-relaxed text-zinc-400">{t("description")}</p>
+          <p className="mx-auto max-w-3xl leading-relaxed text-slate-600 dark:text-slate-300">{t("description")}</p>
         </motion.div>
 
         <motion.div
@@ -92,12 +92,12 @@ export default function Skills() {
           whileInView={{opacity: 1, y: 0}}
           transition={{duration: 0.7}}
           viewport={{once: true}}
-          className="relative mb-12 overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.03] p-6 md:p-8"
+          className="relative mb-12 overflow-hidden rounded-[2rem] border border-slate-200/80 bg-white/80 p-6 md:p-8 dark:border-white/10 dark:bg-white/[0.04]"
         >
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(0,243,255,0.14),transparent_35%),radial-gradient(circle_at_bottom_right,rgba(188,19,254,0.16),transparent_35%)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(0,243,255,0.14),transparent_35%),radial-gradient(circle_at_bottom_right,rgba(188,19,254,0.16),transparent_35%)] dark:bg-[radial-gradient(circle_at_18%_25%,rgba(34,211,238,0.12),transparent_30%),radial-gradient(circle_at_85%_70%,rgba(168,85,247,0.14),transparent_34%)]" />
           <div className="relative grid items-start gap-6 lg:grid-cols-[1.3fr_0.9fr]">
             <div>
-              <p className="mb-4 text-sm font-mono uppercase tracking-[0.24em] text-zinc-500">{t("overviewLabel")}</p>
+              <p className="mb-4 text-sm font-mono uppercase tracking-[0.24em] text-slate-500 dark:text-slate-400">{t("overviewLabel")}</p>
               <div className="mb-6 flex flex-wrap gap-3">
                 {spotlightSkills.map((skill, idx) => (
                   <motion.span
@@ -107,13 +107,13 @@ export default function Skills() {
                     whileHover={{y: -4, scale: 1.04}}
                     transition={{delay: idx * 0.04, duration: 0.35}}
                     viewport={{once: true}}
-                    className="skills-orbit-chip rounded-full border border-white/10 bg-black/30 px-4 py-2 text-sm font-mono text-zinc-200 shadow-[0_0_20px_rgba(0,0,0,0.25)]"
+                    className="skills-orbit-chip rounded-full border border-slate-200/80 bg-white/85 px-4 py-2 text-sm font-mono text-slate-700 shadow-[0_0_20px_rgba(0,0,0,0.25)] dark:border-white/10 dark:bg-white/[0.04] dark:text-slate-200"
                   >
                     {skill}
                   </motion.span>
                 ))}
               </div>
-              <div className="h-2 overflow-hidden rounded-full bg-white/5">
+              <div className="h-2 overflow-hidden rounded-full bg-slate-100/80 dark:bg-white/[0.08]">
                 <motion.div
                   initial={{width: 0, backgroundPosition: "0% 50%"}}
                   whileInView={{width: "100%", backgroundPosition: "100% 50%"}}
@@ -140,9 +140,9 @@ export default function Skills() {
                   >
                     <div className="mb-2 flex items-center gap-3">
                       <Icon size={18} className="text-neon-blue" />
-                      <span className="text-xs font-mono uppercase tracking-[0.2em] text-zinc-500">{stat.label}</span>
+                      <span className="text-xs font-mono uppercase tracking-[0.2em] text-slate-500 dark:text-slate-400">{stat.label}</span>
                     </div>
-                    <div className="text-2xl font-bold text-white">{stat.value}</div>
+                    <div className="text-2xl font-bold text-slate-900 dark:text-white">{stat.value}</div>
                   </motion.div>
                 );
               })}
@@ -166,37 +166,37 @@ export default function Skills() {
                 key={category.key}
                 variants={cardVariants}
                 whileHover={{y: -8, rotateX: 4}}
-                className="group relative overflow-hidden rounded-[1.75rem] border border-white/10 bg-zinc-950/80 p-6 md:p-7"
+                className="group relative overflow-hidden rounded-[1.75rem] border border-slate-200/80 bg-white/82 p-6 md:p-7 dark:border-white/10 dark:bg-white/[0.04]"
                 style={{transformStyle: "preserve-3d"}}
               >
-                <div className={`absolute inset-0 bg-gradient-to-br ${category.accent} opacity-70`} />
-                <div className="absolute -right-16 -top-16 h-40 w-40 rounded-full bg-white/5 blur-3xl transition-transform duration-700 group-hover:scale-125" />
+                <div className={`absolute inset-0 bg-gradient-to-br ${category.accent} opacity-70 dark:opacity-45`} />
+                <div className="absolute -right-16 -top-16 h-40 w-40 rounded-full bg-slate-100/80 blur-3xl transition-transform duration-700 group-hover:scale-125 dark:bg-fuchsia-400/10" />
                 <div className="relative">
                   <div className="mb-6 flex items-start justify-between gap-4">
                     <div>
-                      <div className="mb-3 inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-white/10 bg-black/30 text-neon-blue shadow-[0_0_24px_rgba(0,243,255,0.18)] transition-transform duration-500 group-hover:-rotate-6 group-hover:scale-110">
+                      <div className="mb-3 inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-slate-200/80 bg-white/85 text-neon-blue shadow-[0_0_24px_rgba(0,243,255,0.18)] transition-transform duration-500 group-hover:-rotate-6 group-hover:scale-110 dark:border-white/10 dark:bg-white/[0.05]">
                         <Icon size={24} />
                       </div>
-                      <h3 className="text-xl font-bold tracking-wide text-white">{content.title}</h3>
+                      <h3 className="text-xl font-bold tracking-wide text-slate-900 dark:text-white">{content.title}</h3>
                     </div>
                     <motion.div
                       animate={{y: [0, -5, 0]}}
                       transition={{duration: 2.8, repeat: Infinity, ease: "easeInOut"}}
                       className="text-right"
                     >
-                      <div className="text-2xl font-bold text-white">{category.level}%</div>
-                      <div className="text-[11px] font-mono uppercase tracking-[0.18em] text-zinc-500">{t("momentum")}</div>
+                      <div className="text-2xl font-bold text-slate-900 dark:text-white">{category.level}%</div>
+                      <div className="text-[11px] font-mono uppercase tracking-[0.18em] text-slate-500 dark:text-slate-400">{t("momentum")}</div>
                     </motion.div>
                   </div>
 
-                  <p className="mb-5 text-sm leading-relaxed text-zinc-300">{content.description}</p>
+                  <p className="mb-5 text-sm leading-relaxed text-slate-600 dark:text-slate-300">{content.description}</p>
 
                   <div className="mb-6">
-                    <div className="mb-2 flex items-center justify-between text-[11px] font-mono uppercase tracking-[0.16em] text-zinc-500">
+                    <div className="mb-2 flex items-center justify-between text-[11px] font-mono uppercase tracking-[0.16em] text-slate-500 dark:text-slate-400">
                       <span>{t("progressLabel")}</span>
                       <span>{category.level}/100</span>
                     </div>
-                    <div className="h-2.5 overflow-hidden rounded-full bg-white/5">
+                    <div className="h-2.5 overflow-hidden rounded-full bg-slate-100/80 dark:bg-white/[0.08]">
                       <motion.div
                         initial={{width: 0}}
                         whileInView={{width: `${category.level}%`}}
@@ -216,7 +216,7 @@ export default function Skills() {
                         whileHover={{scale: 1.07, y: -2}}
                         transition={{delay: idx * 0.06, duration: 0.28}}
                         viewport={{once: true}}
-                        className="rounded-full border border-white/10 bg-white/5 px-3.5 py-1.5 text-xs font-mono text-zinc-200 transition-colors group-hover:border-neon-blue/30 group-hover:text-neon-blue"
+                        className="rounded-full border border-slate-200/80 bg-white/75 px-3.5 py-1.5 text-xs font-mono text-slate-700 transition-colors group-hover:border-neon-blue/30 group-hover:text-neon-blue dark:border-white/10 dark:bg-white/[0.04] dark:text-slate-200"
                       >
                         {skill}
                       </motion.span>

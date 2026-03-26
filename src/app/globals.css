@@ -1,19 +1,20 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --color-background: #0a0a0a;
-  --color-foreground: #ededed;
-  
-  --color-primary: #3b82f6; /* Blue */
-  --color-secondary: #8b5cf6; /* Violet */
-  --color-accent: #10b981; /* Emerald */
-  
-  --color-neon-blue: #00f3ff;
-  --color-neon-purple: #bc13fe;
-  --color-neon-green: #39ff14;
+  --color-background: #f4f7fb;
+  --color-foreground: #0f172a;
 
-  --shadow-neon: 0 0 10px rgba(0, 243, 255, 0.5), 0 0 40px rgba(0, 243, 255, 0.2);
-  --shadow-neon-purple: 0 0 10px rgba(188, 19, 254, 0.5), 0 0 40px rgba(188, 19, 254, 0.2);
+  --color-primary: #2563eb;
+  --color-secondary: #c026d3;
+  --color-accent: #059669;
+
+  --color-neon-blue: #0ea5e9;
+  --color-neon-purple: #c026d3;
+  --color-neon-green: #16a34a;
+
+  --shadow-neon: 0 0 18px rgba(14, 165, 233, 0.18), 0 10px 40px rgba(14, 165, 233, 0.12);
+  --shadow-neon-purple: 0 0 18px rgba(192, 38, 211, 0.16), 0 10px 40px rgba(192, 38, 211, 0.1);
 
   --font-sans: "Inter", var(--font-geist-sans), sans-serif;
   --font-mono: "Fira Code", var(--font-geist-mono), monospace;
@@ -21,29 +22,54 @@
 
 @layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #f4f7fb;
+    --foreground: #0f172a;
+  }
+
+  .dark {
+    --background: #020617;
+    --foreground: #e2e8f0;
+    color-scheme: dark;
   }
 
   body {
-    background-color: var(--background);
+    background:
+      radial-gradient(circle at top left, rgba(14, 165, 233, 0.1), transparent 28%),
+      radial-gradient(circle at 85% 20%, rgba(192, 38, 211, 0.08), transparent 24%),
+      linear-gradient(180deg, #f8fbff 0%, #eef4fb 100%);
     color: var(--foreground);
-    @apply antialiased selection:bg-neon-blue/30;
+    @apply antialiased selection:bg-neon-blue/20;
     overflow-x: hidden;
+  }
+
+  .dark body {
+    background:
+      radial-gradient(circle at 50% 18%, rgba(14, 165, 233, 0.14), transparent 24%),
+      radial-gradient(circle at 72% 32%, rgba(168, 85, 247, 0.18), transparent 28%),
+      radial-gradient(circle at 22% 78%, rgba(14, 165, 233, 0.08), transparent 26%),
+      linear-gradient(135deg, #051b34 0%, #081f3d 36%, #13183d 68%, #1a1642 100%);
   }
 }
 
 @layer components {
   .glass {
-    @apply bg-white/5 backdrop-blur-md border border-white/10 shadow-xl;
+    @apply border border-slate-200/80 bg-white/72 backdrop-blur-xl shadow-[0_18px_60px_rgba(15,23,42,0.08)];
+  }
+
+  .dark .glass {
+    @apply border-slate-800/80 bg-slate-900/72 shadow-[0_18px_60px_rgba(2,6,23,0.4)];
   }
 
   .glow-text {
-    @apply text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-neon-purple drop-shadow-[0_0_8px_rgba(0,243,255,0.5)];
+    @apply bg-gradient-to-r from-sky-600 to-fuchsia-600 bg-clip-text text-transparent drop-shadow-[0_4px_16px_rgba(14,165,233,0.18)];
   }
 
   .cyber-button {
-    @apply relative px-6 py-2 bg-transparent border border-neon-blue text-neon-blue font-mono uppercase tracking-widest overflow-hidden transition-all duration-300 hover:text-black hover:bg-neon-blue hover:shadow-neon;
+    @apply relative overflow-hidden border border-sky-500/60 bg-sky-500/8 px-6 py-2 font-mono uppercase tracking-widest text-sky-700 transition-all duration-300 hover:bg-sky-600 hover:text-white hover:shadow-[0_18px_35px_rgba(14,165,233,0.24)];
+  }
+
+  .dark .cyber-button {
+    @apply bg-sky-500/12 text-sky-300 hover:bg-sky-500 hover:text-slate-950;
   }
 
   .skills-orbit-chip {
@@ -56,20 +82,26 @@
   }
 }
 
-/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  @apply bg-background;
+  background: rgba(148, 163, 184, 0.08);
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.65);
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-white/10 rounded-full hover:bg-neon-blue/50 transition-colors;
+  @apply rounded-full bg-slate-300 transition-colors hover:bg-sky-400;
 }
 
-/* Terminal typing animation */
+.dark ::-webkit-scrollbar-thumb {
+  @apply bg-slate-700 hover:bg-sky-500;
+}
+
 .typing-cursor::after {
   content: "|";
   @apply animate-pulse text-neon-blue;

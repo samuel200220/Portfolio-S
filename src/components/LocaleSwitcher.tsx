@@ -21,7 +21,7 @@ export default function LocaleSwitcher() {
   return (
     <div
       aria-label={t("label")}
-      className="flex items-center gap-1 rounded-full border border-white/10 bg-white/5 p-1"
+      className="flex items-center gap-1 rounded-full border border-slate-200/80 bg-white/80 p-1 dark:border-slate-700/80 dark:bg-slate-900/80"
     >
       {routing.locales.map((nextLocale) => {
         const isActive = nextLocale === locale;
@@ -38,8 +38,8 @@ export default function LocaleSwitcher() {
             className={cn(
               "rounded-full px-3 py-1.5 text-[11px] font-mono uppercase tracking-[0.18em] transition-colors",
               isActive
-                ? "bg-neon-blue text-black"
-                : "text-zinc-400 hover:text-white"
+                ? "bg-sky-600 text-white"
+                : "text-slate-500 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white"
             )}
           >
             {localeLabels[nextLocale]}

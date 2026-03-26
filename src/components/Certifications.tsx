@@ -75,8 +75,8 @@ export default function Certifications() {
   const stats = t.raw("stats") as Stat[];
 
   return (
-    <section id="certifications" className="relative overflow-hidden bg-zinc-950/20 py-24">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_22%,rgba(0,243,255,0.08),transparent_26%),radial-gradient(circle_at_82%_70%,rgba(188,19,254,0.08),transparent_24%)]" />
+    <section id="certifications" className="relative overflow-hidden bg-sky-50/30 py-24 dark:bg-transparent">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_22%,rgba(0,243,255,0.08),transparent_26%),radial-gradient(circle_at_82%_70%,rgba(188,19,254,0.08),transparent_24%)] dark:bg-[radial-gradient(circle_at_18%_22%,rgba(34,211,238,0.08),transparent_24%),radial-gradient(circle_at_82%_70%,rgba(168,85,247,0.1),transparent_28%)]" />
       <div className="container relative mx-auto px-6">
         <motion.div
           initial={{opacity: 0, y: 20}}
@@ -85,11 +85,11 @@ export default function Certifications() {
           viewport={{once: true}}
           className="mb-14 text-center"
         >
-          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-mono uppercase tracking-[0.26em] text-neon-blue/80">
+          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-slate-200/80 bg-white/75 px-4 py-1.5 text-xs font-mono uppercase tracking-[0.26em] text-neon-blue/80 dark:border-white/10 dark:bg-white/[0.04]">
             <Sparkles size={14} /> {t("badge")}
           </div>
           <h2 className="mb-4 text-3xl font-bold glow-text md:text-5xl">{t("title")}</h2>
-          <p className="mx-auto max-w-3xl leading-relaxed text-zinc-400">{t("description")}</p>
+          <p className="mx-auto max-w-3xl leading-relaxed text-slate-600 dark:text-slate-300">{t("description")}</p>
         </motion.div>
 
         <motion.div
@@ -109,8 +109,8 @@ export default function Certifications() {
               whileHover={{y: -3}}
               className="glass rounded-[1.5rem] p-5"
             >
-              <p className="mb-2 text-[11px] font-mono uppercase tracking-[0.18em] text-zinc-500">{stat.label}</p>
-              <p className="text-2xl font-bold text-white">{stat.value}</p>
+              <p className="mb-2 text-[11px] font-mono uppercase tracking-[0.18em] text-slate-500 dark:text-slate-400">{stat.label}</p>
+              <p className="text-2xl font-bold text-slate-900 dark:text-white">{stat.value}</p>
             </motion.div>
           ))}
         </motion.div>
@@ -127,28 +127,28 @@ export default function Certifications() {
               key={cert.key}
               variants={cardVariants}
               whileHover={{y: -8}}
-              className="group relative overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/[0.04] p-5"
+              className="group relative overflow-hidden rounded-[1.75rem] border border-slate-200/80 bg-white/82 p-5 dark:border-white/10 dark:bg-white/[0.04]"
             >
-              <div className={`absolute inset-0 bg-gradient-to-br ${cert.accent} opacity-80`} />
-              <div className="absolute -right-10 -top-10 h-28 w-28 rounded-full bg-white/5 blur-3xl transition-transform duration-700 group-hover:scale-125" />
+              <div className={`absolute inset-0 bg-gradient-to-br ${cert.accent} opacity-80 dark:opacity-45`} />
+              <div className="absolute -right-10 -top-10 h-28 w-28 rounded-full bg-slate-100/80 blur-3xl transition-transform duration-700 group-hover:scale-125 dark:bg-fuchsia-400/10" />
 
               <div className="relative">
                 <div className="mb-5 flex items-start justify-between gap-4">
                   <motion.div
                     whileHover={{rotate: -8, scale: 1.05}}
-                    className="flex h-12 w-12 items-center justify-center rounded-2xl border border-white/10 bg-black/30 text-neon-blue shadow-[0_0_24px_rgba(0,243,255,0.15)]"
+                    className="flex h-12 w-12 items-center justify-center rounded-2xl border border-slate-200/80 bg-white/88 text-neon-blue shadow-[0_0_24px_rgba(0,243,255,0.15)] dark:border-white/10 dark:bg-white/[0.05]"
                   >
                     <Award size={22} />
                   </motion.div>
-                  <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[10px] font-mono uppercase tracking-[0.18em] text-zinc-300">
+                  <span className="rounded-full border border-slate-200/80 bg-white/75 px-3 py-1 text-[10px] font-mono uppercase tracking-[0.18em] text-slate-700 dark:border-white/10 dark:bg-white/[0.04] dark:text-slate-300">
                     {t(`statuses.${cert.key}`)}
                   </span>
                 </div>
 
-                <h3 className="mb-2 text-lg font-bold text-white transition-colors group-hover:text-neon-blue md:text-xl">
+                <h3 className="mb-2 text-lg font-bold text-slate-900 transition-colors group-hover:text-neon-blue md:text-xl dark:text-white">
                   {cert.title}
                 </h3>
-                <div className="mb-5 flex flex-wrap items-center gap-3 text-sm text-zinc-400">
+                <div className="mb-5 flex flex-wrap items-center gap-3 text-sm text-slate-600 dark:text-slate-300">
                   <span className="inline-flex items-center gap-2">
                     <BadgeCheck size={15} className="text-neon-blue" /> {cert.issuer}
                   </span>
@@ -159,7 +159,7 @@ export default function Certifications() {
 
                 <motion.div
                   whileHover={{scale: 1.01}}
-                  className="relative mb-5 overflow-hidden rounded-[1.25rem] border border-white/10 bg-black/20"
+                  className="relative mb-5 overflow-hidden rounded-[1.25rem] border border-slate-200/80 bg-white/85 dark:border-white/10 dark:bg-white/[0.04]"
                 >
                   <div className="relative aspect-[1.45/1] w-full">
                     <Image
@@ -170,7 +170,7 @@ export default function Certifications() {
                       className="object-cover object-top transition-transform duration-700 group-hover:scale-[1.03]"
                     />
                   </div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-white/15 to-transparent dark:from-black/35" />
                 </motion.div>
 
                 <div className="flex flex-wrap gap-2.5">
@@ -182,7 +182,7 @@ export default function Certifications() {
                       transition={{delay: idx * 0.05, duration: 0.28}}
                       viewport={{once: true}}
                       whileHover={{y: -2, scale: 1.04}}
-                      className="rounded-full border border-white/10 bg-black/20 px-3 py-1.5 text-xs font-mono text-zinc-200"
+                      className="rounded-full border border-slate-200/80 bg-white/85 px-3 py-1.5 text-xs font-mono text-slate-700 dark:border-white/10 dark:bg-white/[0.04] dark:text-slate-200"
                     >
                       {skill}
                     </motion.span>

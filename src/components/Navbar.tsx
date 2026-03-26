@@ -5,6 +5,7 @@ import {Terminal, Code2, User, Briefcase, Mail, Menu, X} from "lucide-react";
 import {useEffect, useState} from "react";
 import {useTranslations} from "next-intl";
 import LocaleSwitcher from "@/components/LocaleSwitcher";
+import ThemeToggle from "@/components/ThemeToggle";
 import {Link} from "@/i18n/navigation";
 import {cn} from "@/lib/utils";
 
@@ -42,12 +43,12 @@ export default function Navbar() {
         className={cn(
           "fixed top-0 left-0 right-0 z-50 border-b transition-all duration-300",
           scrolled
-            ? "border-white/10 bg-black/80 py-3 backdrop-blur-lg"
+            ? "border-slate-200/80 bg-white/80 py-3 backdrop-blur-lg dark:border-slate-800/80 dark:bg-slate-950/80"
             : "border-transparent bg-transparent py-5"
         )}
       >
         <div className="container mx-auto flex items-center justify-between px-6">
-          <Link href="/" className="flex items-center gap-2 font-mono text-xl font-bold group">
+          <Link href="/" className="group flex items-center gap-2 font-mono text-xl font-bold">
             <Terminal className="text-neon-blue group-hover:animate-pulse" />
             <span className="hidden sm:inline">
               SAMUEL<span className="text-neon-blue">.DEV</span>
@@ -74,11 +75,12 @@ export default function Navbar() {
                 </motion.a>
               ))}
             </div>
+            <ThemeToggle />
             <LocaleSwitcher />
           </div>
 
           <button
-            className="text-zinc-400 hover:text-white md:hidden"
+            className="text-slate-500 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white md:hidden"
             onClick={() => setIsOpen(!isOpen)}
             aria-label={t("toggleMenu")}
           >
@@ -95,16 +97,17 @@ export default function Navbar() {
       <motion.div
         initial={false}
         animate={isOpen ? {opacity: 1, x: 0} : {opacity: 0, x: "100%"}}
-        className="fixed inset-0 z-40 bg-black/95 px-6 pt-24 backdrop-blur-xl md:hidden"
+        className="fixed inset-0 z-40 bg-white/95 px-6 pt-24 backdrop-blur-xl dark:bg-slate-950/95 md:hidden"
       >
         <div className="flex flex-col gap-6">
+          <ThemeToggle />
           <LocaleSwitcher />
           {navItems.map((item) => (
             <a
               key={item.key}
               href={item.href}
               onClick={() => setIsOpen(false)}
-              className="flex items-center gap-4 font-mono text-2xl hover:text-neon-blue"
+              className="flex items-center gap-4 font-mono text-2xl hover:text-neon-blue dark:text-slate-100"
             >
               <item.icon className="text-neon-blue" />
               {t(`links.${item.key}`)}

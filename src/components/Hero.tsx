@@ -72,7 +72,7 @@ export default function Hero() {
           initial={{opacity: 0, y: 22}}
           animate={{opacity: 1, y: 0}}
           transition={{duration: 0.8, delay: 0.2}}
-          className="mx-auto mb-8 max-w-2xl text-base leading-relaxed text-zinc-400 md:text-lg"
+          className="mx-auto mb-8 max-w-2xl text-base leading-relaxed text-slate-600 dark:text-slate-300 md:text-lg"
         >
           {t("description")}
         </motion.p>
@@ -82,7 +82,7 @@ export default function Hero() {
             initial={{opacity: 0}}
             animate={{opacity: 1}}
             transition={{delay: 0.35, duration: 0.8}}
-            className="text-xl font-mono text-zinc-300 md:text-3xl"
+            className="text-xl font-mono text-slate-700 dark:text-slate-100 md:text-3xl"
           >
             {words[index].substring(0, subIndex)}
             <span className="typing-cursor"></span>
@@ -102,7 +102,7 @@ export default function Hero() {
               animate={{opacity: 1, y: 0}}
               transition={{delay: 0.55 + idx * 0.08, duration: 0.45}}
               whileHover={{y: -3}}
-              className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-mono uppercase tracking-[0.2em] text-zinc-300"
+              className="rounded-full border border-slate-200/80 bg-white/75 px-4 py-2 text-xs font-mono uppercase tracking-[0.2em] text-slate-700 dark:border-slate-700/80 dark:bg-slate-900/80 dark:text-slate-200"
             >
               {item}
             </motion.span>
@@ -122,7 +122,7 @@ export default function Hero() {
             whileHover={{y: -3}}
             whileTap={{scale: 0.98}}
             href="/cv.pdf"
-            className="rounded-full border border-white/15 bg-white/5 px-6 py-3 font-mono text-sm uppercase tracking-[0.22em] transition-all hover:border-white/25 hover:bg-white/10"
+            className="rounded-full border border-slate-200/80 bg-white/80 px-6 py-3 font-mono text-sm uppercase tracking-[0.22em] transition-all hover:border-slate-300 hover:bg-white dark:border-slate-700/80 dark:bg-slate-900/80 dark:text-slate-100 dark:hover:border-slate-600 dark:hover:bg-slate-900"
           >
             {t("downloadCv")}
           </motion.a>
