@@ -1,0 +1,186 @@
+{
+  "Metadata": {
+    "title": "Samuel Sean | Software Engineer & AI",
+    "description": "Professional portfolio of Samuel Sean Fotsing Tagatsing, an engineering student passionate about software engineering and artificial intelligence.",
+    "keywords": ["Software Engineer", "AI", "Portfolio", "Next.js", "Cameroon", "ENSPY"]
+  },
+  "LocaleSwitcher": {
+    "label": "Language switcher"
+  },
+  "Navbar": {
+    "toggleMenu": "Open menu",
+    "links": {
+      "home": "Home",
+      "about": "About",
+      "skills": "Skills",
+      "projects": "Projects",
+      "contact": "Contact"
+    }
+  },
+  "Hero": {
+    "availability": "Available to build useful products",
+    "description": "I design clean, expressive and high-performance web experiences, with a strong interest in artificial intelligence and software engineering.",
+    "viewProjects": "View my projects",
+    "downloadCv": "Download CV",
+    "words": [
+      "Engineering student @ ENSPY",
+      "Passionate about AI",
+      "Full Stack Developer",
+      "Samuel Sean Fotsing Tagatsing"
+    ],
+    "highlights": ["Full Stack", "AI", "Clean design", "Systems Thinking"]
+  },
+  "About": {
+    "badge": "Profile",
+    "title": "About me",
+    "description": "Engineering student passionate about the intersection of software engineering and artificial intelligence. Based in Yaoundé, Cameroon, I build robust, useful and visually polished digital experiences.",
+    "portraitAlt": "Portrait of Samuel",
+    "location": "Yaoundé, Cameroon",
+    "schoolShortcut": "ENSPY (2022-2027)",
+    "educationTitle": "Education",
+    "highlights": ["Software engineering", "AI", "Architecture", "Clean UX"],
+    "education": [
+      {
+        "year": "2022 - 2027",
+        "title": "Engineering degree in computer science",
+        "institution": "ENSPY (National Advanced School of Engineering of Yaoundé)",
+        "desc": "High-level training in engineering, algorithms and complex systems."
+      },
+      {
+        "year": "2022",
+        "title": "Baccalaureate, Series C (Honors)",
+        "institution": "Collège Vogt",
+        "desc": "Specialization in mathematics and physics."
+      }
+    ]
+  },
+  "Skills": {
+    "badge": "Technical arsenal",
+    "title": "Technical skills",
+    "description": "A foundation in engineering, data and interfaces enhanced by a more expressive presentation, with animations that reveal progress, rhythm and the complementarity of each skill.",
+    "overviewLabel": "Overview",
+    "momentum": "Momentum",
+    "progressLabel": "Visual progress",
+    "spotlightSkills": ["Next.js", "FastAPI", "React", "PostgreSQL", "Python", "Spring Boot", "Tailwind CSS", "Framer Motion", "SQL", "Java"],
+    "stats": [
+      {"label": "Stacks explored", "value": "10+"},
+      {"label": "Main focus", "value": "Full Stack"},
+      {"label": "Approach", "value": "Product + performance"}
+    ],
+    "categories": {
+      "languages": {
+        "title": "Languages & foundations",
+        "description": "Strong fundamentals for algorithms, logic and software design.",
+        "skills": ["C", "Python", "Java", "SQL"]
+      },
+      "frontend": {
+        "title": "Frontend & design",
+        "description": "Modern, fluid interfaces focused on user experience.",
+        "skills": ["React", "Next.js", "Tailwind CSS", "Framer Motion"]
+      },
+      "backend": {
+        "title": "Backend & systems",
+        "description": "Robust APIs, data persistence and scalable architecture.",
+        "skills": ["Spring Boot", "FastAPI", "PostgreSQL", "ScyllaDB", "Supabase"]
+      },
+      "soft": {
+        "title": "Soft skills",
+        "description": "Clear communication, team coordination and reliable execution.",
+        "skills": ["Organization", "Communication", "Teamwork"]
+      }
+    }
+  },
+  "Certifications": {
+    "badge": "Credentials",
+    "title": "Certifications",
+    "description": "My real machine learning certifications, with the certificates displayed directly to showcase the full learning journey.",
+    "stats": [
+      {"label": "Certifications", "value": "4"},
+      {"label": "Completed tracks", "value": "1"},
+      {"label": "Domain", "value": "Machine Learning"}
+    ],
+    "statuses": {
+      "course1": "Completed",
+      "course2": "Completed",
+      "course3": "Completed",
+      "specialization": "Specialization completed"
+    }
+  },
+  "Projects": {
+    "badge": "Selected work",
+    "title": "Selected projects",
+    "description": "Innovative solutions, polished interfaces and technical work designed for impact.",
+    "viewAll": "See everything on GitHub",
+    "projectLabel": "Project",
+    "caseStudy": "Case study",
+    "source": "Source",
+    "items": {
+      "farcal": {
+        "title": "FARCAL",
+        "description": "Smart platform for calculating urban transportation fares."
+      },
+      "shopecart": {
+        "title": "SHOPECART",
+        "description": "E-commerce platform for electronic devices."
+      },
+      "xccm1": {
+        "title": "XCCM1",
+        "description": "Course creation platform."
+      }
+    }
+  },
+  "Experiences": {
+    "badge": "Journey",
+    "title": "Experience & hackathons",
+    "description": "A few defining experiences that strengthened my product mindset, data skills and technical execution.",
+    "items": [
+      {
+        "type": "Internship",
+        "role": "Full Stack Developer",
+        "company": "Academic project",
+        "date": "2025",
+        "desc": "Development of an urban fare calculator.",
+        "icon": "briefcase"
+      },
+      {
+        "type": "Hackathon",
+        "role": "AI for health",
+        "company": "Hackathon 2025",
+        "date": "2025",
+        "desc": "Medical chatbot, patient management and blood stock forecasting.",
+        "icon": "heartPulse"
+      },
+      {
+        "type": "Hackathon",
+        "role": "CIDP Hackathon",
+        "company": "African Innovation",
+        "date": "2025",
+        "desc": "Social platform for African NGOs.",
+        "icon": "zap"
+      }
+    ]
+  },
+  "Contact": {
+    "badge": "Contact",
+    "title": "Let's connect",
+    "description": "Do you have a project, an idea or a collaboration in mind? Let's build something simple, useful and carefully executed.",
+    "location": "Yaoundé, Cameroon",
+    "successTitle": "Message sent",
+    "successDescription": "Thank you for your message. I'll get back to you as soon as possible.",
+    "sendAnother": "Send another message",
+    "nameLabel": "Full name",
+    "namePlaceholder": "John Doe",
+    "emailLabel": "Email",
+    "emailPlaceholder": "john@example.com",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Your message here...",
+    "submit": "SEND MESSAGE",
+    "error": "Something went wrong. Please try again."
+  },
+  "Footer": {
+    "builtWith": "© {year} Samuel Sean Fotsing Tagatsing. Built with Next.js and Framer Motion.",
+    "github": "GitHub profile",
+    "linkedin": "LinkedIn profile",
+    "twitter": "Twitter profile"
+  }
+}

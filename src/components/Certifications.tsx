@@ -1,53 +1,53 @@
 "use client";
 
 import Image from "next/image";
-import { motion, type Variants } from "framer-motion";
-import { Award, BadgeCheck, CalendarDays, Sparkles } from "lucide-react";
+import {motion, type Variants} from "framer-motion";
+import {Award, BadgeCheck, CalendarDays, Sparkles} from "lucide-react";
+import {useTranslations} from "next-intl";
+
+type Stat = {
+  label: string;
+  value: string;
+};
 
 const certifications = [
   {
+    key: "course1",
     title: "Supervised Machine Learning: Regression and Classification",
     issuer: "DeepLearning.AI x Stanford Online",
     year: "Nov 2025",
-    status: "Validée",
     image: "/machine_learning.jpeg",
     accent: "from-cyan-400/25 via-cyan-400/5 to-transparent",
     skills: ["Machine Learning", "Regression", "Classification"],
   },
   {
+    key: "course2",
     title: "Advanced Learning Algorithms",
     issuer: "DeepLearning.AI x Stanford Online",
     year: "Jan 2026",
-    status: "Validée",
     image: "/1.png",
     accent: "from-fuchsia-400/25 via-fuchsia-400/5 to-transparent",
     skills: ["Neural Networks", "Deep Learning", "Training"],
   },
   {
+    key: "course3",
     title: "Unsupervised Learning, Recommenders, Reinforcement Learning",
     issuer: "DeepLearning.AI x Stanford Online",
     year: "Mar 2026",
-    status: "Validée",
     image: "/2.png",
     accent: "from-emerald-400/25 via-emerald-400/5 to-transparent",
     skills: ["Clustering", "Recommenders", "Reinforcement Learning"],
   },
   {
+    key: "specialization",
     title: "Machine Learning Specialization",
     issuer: "Coursera x Stanford Online",
     year: "Mar 2026",
-    status: "Spécialisation complète",
     image: "/3.png",
     accent: "from-violet-400/25 via-violet-400/5 to-transparent",
     skills: ["ML Foundations", "Supervised", "Unsupervised"],
   },
-];
-
-const stats = [
-  { label: "Certifications", value: "4" },
-  { label: "Parcours complets", value: "1" },
-  { label: "Domaine", value: "Machine Learning" },
-];
+] as const;
 
 const containerVariants: Variants = {
   hidden: {},
@@ -59,7 +59,7 @@ const containerVariants: Variants = {
 };
 
 const cardVariants: Variants = {
-  hidden: { opacity: 0, y: 24 },
+  hidden: {opacity: 0, y: 24},
   show: {
     opacity: 1,
     y: 0,
@@ -71,41 +71,42 @@ const cardVariants: Variants = {
 };
 
 export default function Certifications() {
+  const t = useTranslations("Certifications");
+  const stats = t.raw("stats") as Stat[];
+
   return (
     <section id="certifications" className="relative overflow-hidden bg-zinc-950/20 py-24">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_22%,rgba(0,243,255,0.08),transparent_26%),radial-gradient(circle_at_82%_70%,rgba(188,19,254,0.08),transparent_24%)]" />
       <div className="container relative mx-auto px-6">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.65 }}
-          viewport={{ once: true }}
+          initial={{opacity: 0, y: 20}}
+          whileInView={{opacity: 1, y: 0}}
+          transition={{duration: 0.65}}
+          viewport={{once: true}}
           className="mb-14 text-center"
         >
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-mono uppercase tracking-[0.26em] text-neon-blue/80">
-            <Sparkles size={14} /> Credentials
+            <Sparkles size={14} /> {t("badge")}
           </div>
-          <h2 className="mb-4 text-3xl font-bold glow-text md:text-5xl">Certifications</h2>
-          <p className="mx-auto max-w-3xl leading-relaxed text-zinc-400">
-            Mes certifications réelles en machine learning, avec les certificats affichés directement pour mettre en valeur le parcours complet.
-          </p>
+          <h2 className="mb-4 text-3xl font-bold glow-text md:text-5xl">{t("title")}</h2>
+          <p className="mx-auto max-w-3xl leading-relaxed text-zinc-400">{t("description")}</p>
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-          viewport={{ once: true }}
+          initial={{opacity: 0, y: 20}}
+          whileInView={{opacity: 1, y: 0}}
+          transition={{duration: 0.7}}
+          viewport={{once: true}}
           className="mb-10 grid gap-4 md:grid-cols-3"
         >
           {stats.map((stat, idx) => (
             <motion.div
               key={stat.label}
-              initial={{ opacity: 0, y: 18 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: idx * 0.08, duration: 0.45 }}
-              viewport={{ once: true }}
-              whileHover={{ y: -3 }}
+              initial={{opacity: 0, y: 18}}
+              whileInView={{opacity: 1, y: 0}}
+              transition={{delay: idx * 0.08, duration: 0.45}}
+              viewport={{once: true}}
+              whileHover={{y: -3}}
               className="glass rounded-[1.5rem] p-5"
             >
               <p className="mb-2 text-[11px] font-mono uppercase tracking-[0.18em] text-zinc-500">{stat.label}</p>
@@ -118,14 +119,14 @@ export default function Certifications() {
           variants={containerVariants}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true, amount: 0.2 }}
+          viewport={{once: true, amount: 0.2}}
           className="grid gap-6 lg:grid-cols-2"
         >
           {certifications.map((cert) => (
             <motion.article
-              key={cert.title}
+              key={cert.key}
               variants={cardVariants}
-              whileHover={{ y: -8 }}
+              whileHover={{y: -8}}
               className="group relative overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/[0.04] p-5"
             >
               <div className={`absolute inset-0 bg-gradient-to-br ${cert.accent} opacity-80`} />
@@ -134,13 +135,13 @@ export default function Certifications() {
               <div className="relative">
                 <div className="mb-5 flex items-start justify-between gap-4">
                   <motion.div
-                    whileHover={{ rotate: -8, scale: 1.05 }}
+                    whileHover={{rotate: -8, scale: 1.05}}
                     className="flex h-12 w-12 items-center justify-center rounded-2xl border border-white/10 bg-black/30 text-neon-blue shadow-[0_0_24px_rgba(0,243,255,0.15)]"
                   >
                     <Award size={22} />
                   </motion.div>
                   <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[10px] font-mono uppercase tracking-[0.18em] text-zinc-300">
-                    {cert.status}
+                    {t(`statuses.${cert.key}`)}
                   </span>
                 </div>
 
@@ -157,7 +158,7 @@ export default function Certifications() {
                 </div>
 
                 <motion.div
-                  whileHover={{ scale: 1.01 }}
+                  whileHover={{scale: 1.01}}
                   className="relative mb-5 overflow-hidden rounded-[1.25rem] border border-white/10 bg-black/20"
                 >
                   <div className="relative aspect-[1.45/1] w-full">
@@ -176,11 +177,11 @@ export default function Certifications() {
                   {cert.skills.map((skill, idx) => (
                     <motion.span
                       key={skill}
-                      initial={{ opacity: 0, y: 10 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      transition={{ delay: idx * 0.05, duration: 0.28 }}
-                      viewport={{ once: true }}
-                      whileHover={{ y: -2, scale: 1.04 }}
+                      initial={{opacity: 0, y: 10}}
+                      whileInView={{opacity: 1, y: 0}}
+                      transition={{delay: idx * 0.05, duration: 0.28}}
+                      viewport={{once: true}}
+                      whileHover={{y: -2, scale: 1.04}}
                       className="rounded-full border border-white/10 bg-black/20 px-3 py-1.5 text-xs font-mono text-zinc-200"
                     >
                       {skill}

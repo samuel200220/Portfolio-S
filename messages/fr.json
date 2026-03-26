@@ -1,0 +1,186 @@
+{
+  "Metadata": {
+    "title": "Samuel Sean | Ingénieur logiciel & IA",
+    "description": "Portfolio professionnel de Samuel Sean Fotsing Tagatsing, étudiant ingénieur passionné par le génie logiciel et l'intelligence artificielle.",
+    "keywords": ["Software Engineer", "AI", "Portfolio", "Next.js", "Cameroun", "ENSPY"]
+  },
+  "LocaleSwitcher": {
+    "label": "Sélecteur de langue"
+  },
+  "Navbar": {
+    "toggleMenu": "Ouvrir le menu",
+    "links": {
+      "home": "Accueil",
+      "about": "À propos",
+      "skills": "Compétences",
+      "projects": "Projets",
+      "contact": "Contact"
+    }
+  },
+  "Hero": {
+    "availability": "Disponible pour créer des produits utiles",
+    "description": "Je conçois des expériences web épurées, performantes et expressives, avec un fort intérêt pour l'intelligence artificielle et l'ingénierie logicielle.",
+    "viewProjects": "Voir mes projets",
+    "downloadCv": "Télécharger le CV",
+    "words": [
+      "Étudiant ingénieur @ ENSPY",
+      "Passionné par l'IA",
+      "Développeur Full Stack",
+      "Samuel Sean Fotsing Tagatsing"
+    ],
+    "highlights": ["Full Stack", "IA", "Design propre", "Systems Thinking"]
+  },
+  "About": {
+    "badge": "Profil",
+    "title": "À propos de moi",
+    "description": "Étudiant ingénieur passionné par l'intersection entre le génie logiciel et l'intelligence artificielle. Basé à Yaoundé, Cameroun, je construis des expériences numériques robustes, utiles et visuellement maîtrisées.",
+    "portraitAlt": "Portrait de Samuel",
+    "location": "Yaoundé, Cameroun",
+    "schoolShortcut": "ENSPY (2022-2027)",
+    "educationTitle": "Formation",
+    "highlights": ["Génie logiciel", "IA", "Architecture", "UX épurée"],
+    "education": [
+      {
+        "year": "2022 - 2027",
+        "title": "Cycle ingénieur en génie informatique",
+        "institution": "ENSPY (École nationale supérieure polytechnique de Yaoundé)",
+        "desc": "Formation d'excellence en ingénierie, algorithmique et systèmes complexes."
+      },
+      {
+        "year": "2022",
+        "title": "Baccalauréat série C (Mention Bien)",
+        "institution": "Collège Vogt",
+        "desc": "Spécialisation en mathématiques et physique."
+      }
+    ]
+  },
+  "Skills": {
+    "badge": "Arsenal technique",
+    "title": "Compétences techniques",
+    "description": "Un socle d'ingénierie, de data et d'interface enrichi par une présentation plus expressive, avec des animations qui montrent la progression, le rythme et la complémentarité des compétences.",
+    "overviewLabel": "Vue d'ensemble",
+    "momentum": "Momentum",
+    "progressLabel": "Progression visuelle",
+    "spotlightSkills": ["Next.js", "FastAPI", "React", "PostgreSQL", "Python", "Spring Boot", "Tailwind CSS", "Framer Motion", "SQL", "Java"],
+    "stats": [
+      {"label": "Stacks explorées", "value": "10+"},
+      {"label": "Focus principal", "value": "Full Stack"},
+      {"label": "Approche", "value": "Produit + performance"}
+    ],
+    "categories": {
+      "languages": {
+        "title": "Langages & base",
+        "description": "Fondations solides pour l'algorithmique, la logique et la conception logicielle.",
+        "skills": ["C", "Python", "Java", "SQL"]
+      },
+      "frontend": {
+        "title": "Frontend & design",
+        "description": "Interfaces modernes, fluides et orientées expérience utilisateur.",
+        "skills": ["React", "Next.js", "Tailwind CSS", "Framer Motion"]
+      },
+      "backend": {
+        "title": "Backend & systèmes",
+        "description": "APIs robustes, persistance des données et architecture évolutive.",
+        "skills": ["Spring Boot", "FastAPI", "PostgreSQL", "ScyllaDB", "Supabase"]
+      },
+      "soft": {
+        "title": "Soft skills",
+        "description": "Communication claire, coordination d'équipe et exécution fiable.",
+        "skills": ["Organisation", "Communication", "Travail d'équipe"]
+      }
+    }
+  },
+  "Certifications": {
+    "badge": "Certifications",
+    "title": "Certifications",
+    "description": "Mes certifications réelles en machine learning, avec les certificats affichés directement pour mettre en valeur le parcours complet.",
+    "stats": [
+      {"label": "Certifications", "value": "4"},
+      {"label": "Parcours complets", "value": "1"},
+      {"label": "Domaine", "value": "Machine Learning"}
+    ],
+    "statuses": {
+      "course1": "Validée",
+      "course2": "Validée",
+      "course3": "Validée",
+      "specialization": "Spécialisation complète"
+    }
+  },
+  "Projects": {
+    "badge": "Projets sélectionnés",
+    "title": "Projets sélectionnés",
+    "description": "Solutions innovantes, interfaces maîtrisées et réalisations techniques orientées impact.",
+    "viewAll": "Voir tout sur GitHub",
+    "projectLabel": "Projet",
+    "caseStudy": "Étude de cas",
+    "source": "Source",
+    "items": {
+      "farcal": {
+        "title": "FARCAL",
+        "description": "Plateforme intelligente de calcul de tarifs urbains."
+      },
+      "shopecart": {
+        "title": "SHOPECART",
+        "description": "Plateforme e-commerce d'appareils électroniques."
+      },
+      "xccm1": {
+        "title": "XCCM1",
+        "description": "Plateforme de création de cours."
+      }
+    }
+  },
+  "Experiences": {
+    "badge": "Parcours",
+    "title": "Expériences & hackathons",
+    "description": "Quelques expériences structurantes qui ont renforcé ma pratique produit, data et exécution technique.",
+    "items": [
+      {
+        "type": "Stage",
+        "role": "Développeur Full Stack",
+        "company": "Projet académique",
+        "date": "2025",
+        "desc": "Développement d'un calculateur de tarifs urbains (Fare Calculator).",
+        "icon": "briefcase"
+      },
+      {
+        "type": "Hackathon",
+        "role": "IA santé",
+        "company": "Hackathon 2025",
+        "date": "2025",
+        "desc": "Chatbot médical, gestion des patients et prévision de stock de sang.",
+        "icon": "heartPulse"
+      },
+      {
+        "type": "Hackathon",
+        "role": "CIDP Hackathon",
+        "company": "Innovation Africaine",
+        "date": "2025",
+        "desc": "Plateforme sociale pour les ONG africaines.",
+        "icon": "zap"
+      }
+    ]
+  },
+  "Contact": {
+    "badge": "Contact",
+    "title": "Connectons-nous",
+    "description": "Vous avez un projet, une idée ou une collaboration en tête ? Écrivons quelque chose de simple, utile et soigneusement exécuté.",
+    "location": "Yaoundé, Cameroun",
+    "successTitle": "Message envoyé",
+    "successDescription": "Merci pour votre message. Je vous répondrai dès que possible.",
+    "sendAnother": "Envoyer un autre message",
+    "nameLabel": "Nom complet",
+    "namePlaceholder": "John Doe",
+    "emailLabel": "Email",
+    "emailPlaceholder": "john@example.com",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Votre message ici...",
+    "submit": "TRANSMETTRE LE MESSAGE",
+    "error": "Une erreur est survenue. Veuillez réessayer."
+  },
+  "Footer": {
+    "builtWith": "© {year} Samuel Sean Fotsing Tagatsing. Construit avec Next.js et Framer Motion.",
+    "github": "Profil GitHub",
+    "linkedin": "Profil LinkedIn",
+    "twitter": "Profil Twitter"
+  }
+}

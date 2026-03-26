@@ -1,0 +1,186 @@
+{
+  "Metadata": {
+    "title": "Samuel Sean | 软件工程与人工智能",
+    "description": "Samuel Sean Fotsing Tagatsing 的个人作品集。他是一名热爱软件工程与人工智能的工程专业学生。",
+    "keywords": ["软件工程师", "人工智能", "作品集", "Next.js", "喀麦隆", "ENSPY"]
+  },
+  "LocaleSwitcher": {
+    "label": "语言切换器"
+  },
+  "Navbar": {
+    "toggleMenu": "打开菜单",
+    "links": {
+      "home": "首页",
+      "about": "关于我",
+      "skills": "技能",
+      "projects": "项目",
+      "contact": "联系"
+    }
+  },
+  "Hero": {
+    "availability": "可参与打造真正有用的产品",
+    "description": "我专注于打造简洁、富有表现力且高性能的 Web 体验，并对人工智能与软件工程有着浓厚兴趣。",
+    "viewProjects": "查看我的项目",
+    "downloadCv": "下载简历",
+    "words": [
+      "ENSPY 工程专业学生",
+      "热爱人工智能",
+      "全栈开发者",
+      "Samuel Sean Fotsing Tagatsing"
+    ],
+    "highlights": ["全栈", "人工智能", "简洁设计", "系统思维"]
+  },
+  "About": {
+    "badge": "个人简介",
+    "title": "关于我",
+    "description": "我是一名工程专业学生，热衷于软件工程与人工智能的交叉领域。现居喀麦隆雅温得，专注于构建稳健、实用且视觉精致的数字体验。",
+    "portraitAlt": "Samuel 的照片",
+    "location": "雅温得，喀麦隆",
+    "schoolShortcut": "ENSPY (2022-2027)",
+    "educationTitle": "教育经历",
+    "highlights": ["软件工程", "人工智能", "架构", "简洁体验"],
+    "education": [
+      {
+        "year": "2022 - 2027",
+        "title": "计算机工程专业学习",
+        "institution": "ENSPY（雅温得国立高等理工学院）",
+        "desc": "系统学习工程方法、算法以及复杂系统设计。"
+      },
+      {
+        "year": "2022",
+        "title": "C 系高中毕业会考（良好）",
+        "institution": "Vogt 学院",
+        "desc": "主修数学与物理。"
+      }
+    ]
+  },
+  "Skills": {
+    "badge": "技术能力",
+    "title": "技术技能",
+    "description": "以工程、数据和界面能力为基础，通过更具表现力的展示方式呈现各项技能的进展、节奏与互补性。",
+    "overviewLabel": "概览",
+    "momentum": "进展势头",
+    "progressLabel": "可视化进度",
+    "spotlightSkills": ["Next.js", "FastAPI", "React", "PostgreSQL", "Python", "Spring Boot", "Tailwind CSS", "Framer Motion", "SQL", "Java"],
+    "stats": [
+      {"label": "已探索技术栈", "value": "10+"},
+      {"label": "主要方向", "value": "全栈"},
+      {"label": "方法论", "value": "产品 + 性能"}
+    ],
+    "categories": {
+      "languages": {
+        "title": "语言与基础",
+        "description": "在算法、逻辑与软件设计方面具备扎实基础。",
+        "skills": ["C", "Python", "Java", "SQL"]
+      },
+      "frontend": {
+        "title": "前端与设计",
+        "description": "现代、流畅并以用户体验为导向的界面。",
+        "skills": ["React", "Next.js", "Tailwind CSS", "Framer Motion"]
+      },
+      "backend": {
+        "title": "后端与系统",
+        "description": "稳健的 API、数据持久化与可扩展架构。",
+        "skills": ["Spring Boot", "FastAPI", "PostgreSQL", "ScyllaDB", "Supabase"]
+      },
+      "soft": {
+        "title": "软技能",
+        "description": "清晰沟通、团队协作与可靠执行。",
+        "skills": ["组织能力", "沟通能力", "团队合作"]
+      }
+    }
+  },
+  "Certifications": {
+    "badge": "认证",
+    "title": "认证证书",
+    "description": "我在机器学习方向的真实认证证书，直接展示学习成果与完整路径。",
+    "stats": [
+      {"label": "证书数量", "value": "4"},
+      {"label": "完整学习路径", "value": "1"},
+      {"label": "领域", "value": "机器学习"}
+    ],
+    "statuses": {
+      "course1": "已完成",
+      "course2": "已完成",
+      "course3": "已完成",
+      "specialization": "专项已完成"
+    }
+  },
+  "Projects": {
+    "badge": "精选项目",
+    "title": "精选项目",
+    "description": "面向影响力打造的创新解决方案、精致界面与技术实现。",
+    "viewAll": "在 GitHub 上查看全部",
+    "projectLabel": "项目",
+    "caseStudy": "案例说明",
+    "source": "源码",
+    "items": {
+      "farcal": {
+        "title": "FARCAL",
+        "description": "用于城市交通票价计算的智能平台。"
+      },
+      "shopecart": {
+        "title": "SHOPECART",
+        "description": "电子设备电商平台。"
+      },
+      "xccm1": {
+        "title": "XCCM1",
+        "description": "课程创建平台。"
+      }
+    }
+  },
+  "Experiences": {
+    "badge": "成长历程",
+    "title": "经历与黑客松",
+    "description": "一些关键经历强化了我在产品、数据与技术执行方面的能力。",
+    "items": [
+      {
+        "type": "实习",
+        "role": "全栈开发者",
+        "company": "学术项目",
+        "date": "2025",
+        "desc": "开发城市票价计算器。",
+        "icon": "briefcase"
+      },
+      {
+        "type": "黑客松",
+        "role": "医疗人工智能",
+        "company": "Hackathon 2025",
+        "date": "2025",
+        "desc": "医疗聊天机器人、患者管理与血液库存预测。",
+        "icon": "heartPulse"
+      },
+      {
+        "type": "黑客松",
+        "role": "CIDP Hackathon",
+        "company": "非洲创新",
+        "date": "2025",
+        "desc": "面向非洲 NGO 的社交平台。",
+        "icon": "zap"
+      }
+    ]
+  },
+  "Contact": {
+    "badge": "联系",
+    "title": "欢迎联系我",
+    "description": "如果你有项目、想法或合作意向，我们可以一起打造简单、实用且执行到位的产品。",
+    "location": "雅温得，喀麦隆",
+    "successTitle": "消息已发送",
+    "successDescription": "感谢你的留言，我会尽快回复你。",
+    "sendAnother": "再发送一条消息",
+    "nameLabel": "姓名",
+    "namePlaceholder": "John Doe",
+    "emailLabel": "邮箱",
+    "emailPlaceholder": "john@example.com",
+    "messageLabel": "留言",
+    "messagePlaceholder": "在这里输入你的内容...",
+    "submit": "发送消息",
+    "error": "发生错误，请稍后重试。"
+  },
+  "Footer": {
+    "builtWith": "© {year} Samuel Sean Fotsing Tagatsing。基于 Next.js 与 Framer Motion 构建。",
+    "github": "GitHub 主页",
+    "linkedin": "LinkedIn 主页",
+    "twitter": "Twitter 主页"
+  }
+}
