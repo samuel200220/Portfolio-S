@@ -51,13 +51,13 @@ export default function ContactForm() {
             </div>
             <h2 className="mb-6 text-4xl font-bold uppercase tracking-tight glow-text">Connectons-nous</h2>
             <p className="mb-8 max-w-md text-zinc-400">
-              Vous avez un projet, une idee ou une collaboration en tete ? Ecrivons quelque chose de simple,
-              utile et soigneusement execute.
+              Vous avez un projet, une idée ou une collaboration en tête ? Écrivons quelque chose de simple,
+              utile et soigneusement exécuté.
             </p>
 
             <div className="space-y-4 text-sm font-mono">
               <motion.div whileHover={{ x: 4 }} className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-4 text-zinc-300">
-                <MapPin size={16} className="text-neon-blue" /> Yaounde, Cameroun
+                <MapPin size={16} className="text-neon-blue" /> Yaoundé, Cameroun
               </motion.div>
               <motion.div whileHover={{ x: 4 }} className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-4 text-zinc-300">
                 <Mail size={16} className="text-neon-blue" /> samuel.sean@dev.com
@@ -86,8 +86,8 @@ export default function ContactForm() {
                 >
                   <CheckCircle2 className="h-16 w-16 text-green-400" />
                 </motion.div>
-                <h3 className="text-xl font-bold">Message envoye</h3>
-                <p className="text-sm text-zinc-400">Merci pour votre message. Je vous repondrai des que possible.</p>
+                <h3 className="text-xl font-bold">Message envoyé</h3>
+                <p className="text-sm text-zinc-400">Merci pour votre message. Je vous répondrai dès que possible.</p>
                 <button onClick={() => setStatus("idle")} className="text-sm text-neon-blue border-b border-neon-blue">
                   Envoyer un autre message
                 </button>
@@ -146,7 +146,7 @@ export default function ContactForm() {
                     </>
                   )}
                 </motion.button>
-                {status === "error" && <p className="text-center text-xs text-red-400">Une erreur est survenue. Veuillez reessayer.</p>}
+                {status === "error" && <p className="text-center text-xs text-red-400">Une erreur est survenue. Veuillez réessayer.</p>}
               </form>
             )}
           </motion.div>

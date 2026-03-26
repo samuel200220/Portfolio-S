@@ -11,7 +11,7 @@ const firaCode = Fira_Code({ subsets: ["latin"], variable: "--font-geist-mono" }
 
 export const metadata: Metadata = {
   title: "Samuel Sean | Ingénieur Software & IA",
-  description: "Portfolio professionnel de Samuel Sean Fotsing Tagatsing, étudiant ingénieur passionné par le génie logiciel et l'IA.",
+  description: "Portfolio professionnel de Samuel Sean Fotsing Tagatsing, étudiant ingénieur passionné par le génie logiciel et l'intelligence artificielle.",
   keywords: ["Software Engineer", "AI", "Portfolio", "Next.js", "Cameroun", "ENSPY"],
 };
 

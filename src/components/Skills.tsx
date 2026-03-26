@@ -26,7 +26,7 @@ const skillCategories = [
         icon: Globe,
         accent: "from-fuchsia-400/30 via-fuchsia-400/10 to-transparent",
         level: 84,
-        description: "Interfaces modernes, fluides et orientees experience utilisateur.",
+        description: "Interfaces modernes, fluides et orientées expérience utilisateur.",
         skills: ["React", "Next.js", "Tailwind CSS", "Framer Motion"],
     },
     {
@@ -34,7 +34,7 @@ const skillCategories = [
         icon: Database,
         accent: "from-emerald-400/30 via-emerald-400/10 to-transparent",
         level: 82,
-        description: "APIs robustes, persistence des donnees et architecture evolutive.",
+        description: "APIs robustes, persistance des données et architecture évolutive.",
         skills: ["Spring Boot", "FastAPI", "PostgreSQL", "ScyllaDB", "Supabase"],
     },
     {
@@ -42,8 +42,8 @@ const skillCategories = [
         icon: MessageSquare,
         accent: "from-violet-400/30 via-violet-400/10 to-transparent",
         level: 91,
-        description: "Communication claire, coordination d'equipe et execution fiable.",
-        skills: ["Organisation", "Communication", "Travail d'equipe"],
+        description: "Communication claire, coordination d'équipe et exécution fiable.",
+        skills: ["Organisation", "Communication", "Travail d'équipe"],
     },
 ];
 
@@ -61,7 +61,7 @@ const spotlightSkills = [
 ];
 
 const stats = [
-    { label: "Stacks explorees", value: "10+", icon: Layers3 },
+    { label: "Stacks explorées", value: "10+", icon: Layers3 },
     { label: "Focus principal", value: "Full Stack", icon: Code2 },
     { label: "Approche", value: "Product + Perf", icon: BrainCircuit },
 ];
@@ -101,10 +101,10 @@ export default function Skills() {
                     <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-5 rounded-full border border-white/10 bg-white/5 text-xs font-mono uppercase tracking-[0.28em] text-neon-blue/80">
                         <Sparkles size={14} /> Technical Arsenal
                     </div>
-                    <h2 className="text-3xl md:text-5xl font-bold mb-4 glow-text">Competences Techniques</h2>
+                    <h2 className="text-3xl md:text-5xl font-bold mb-4 glow-text">Compétences techniques</h2>
                     <p className="text-zinc-400 max-w-3xl mx-auto leading-relaxed">
-                        Un socle d'ingenierie, de data et d'interface enrichi par une presentation plus expressive,
-                        avec des animations qui montrent la progression, le rythme et la complementarite des competences.
+                        Un socle d'ingénierie, de data et d'interface enrichi par une présentation plus expressive,
+                        avec des animations qui montrent la progression, le rythme et la complémentarité des compétences.
                     </p>
                 </motion.div>
 

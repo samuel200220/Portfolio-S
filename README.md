@@ -1,19 +1,19 @@
 # Samuel Sean Portfolio
 
-Portfolio personnel developpe avec Next.js pour presenter le profil, les competences, les projets, les experiences et les certifications de Samuel Sean Fotsing Tagatsing.
+Portfolio personnel développé avec Next.js pour présenter le profil, les compétences, les projets, les expériences et les certifications de Samuel Sean Fotsing Tagatsing.
 
-L'interface met l'accent sur une direction visuelle moderne avec animations fluides, effets neon, sections immersives et experience responsive.
+L'interface met l'accent sur une direction visuelle moderne, avec des animations fluides, des effets néon, des sections immersives et une expérience responsive.
 
-## Apercu
+## Aperçu
 
-- Hero anime avec effet typing
-- Navigation fixe avec barre de progression au scroll
-- Section profil et parcours academique
-- Section competences avec cartes animees
-- Section certifications avec visuels integres
-- Section projets alimentee par une API locale
-- Formulaire de contact connecte a une API interne
-- Fond particulaire et curseur personnalise
+- Hero animé avec effet de frappe
+- Navigation fixe avec barre de progression au défilement
+- Section profil et parcours académique
+- Section compétences avec cartes animées
+- Section certifications avec visuels intégrés
+- Section projets alimentée par une API locale
+- Formulaire de contact connecté à une API interne
+- Fond particulaire et curseur personnalisé
 
 ## Stack technique
 
@@ -55,33 +55,33 @@ public/
 
 ## Fonctionnement
 
-### Donnees des projets
+### Données des projets
 
-Les projets affiches dans la section `Projects` proviennent du fichier :
+Les projets affichés dans la section `Projects` proviennent du fichier :
 
 `src/lib/data/projects.json`
 
-Ils sont exposes cote application via :
+Ils sont exposés côté application via :
 
 `GET /api/projects`
 
 ### Formulaire de contact
 
-Le formulaire envoie les donnees vers :
+Le formulaire envoie les données vers :
 
 `POST /api/contact`
 
-Les messages sont actuellement enregistres localement dans :
+Les messages sont actuellement enregistrés localement dans :
 
 `src/lib/data/contacts.json`
 
-Cela est pratique en developpement, mais peu adapte a une production reelle sans base de donnees ou service de messagerie.
+Cela est pratique en développement, mais peu adapté à une production réelle sans base de données ou service de messagerie.
 
 ## Installation
 
-### Prerequis
+### Prérequis
 
-- Node.js 20+ recommande
+- Node.js 20+ recommandé
 - npm
 
 ### Lancer le projet en local
@@ -106,47 +106,47 @@ npm run lint
 
 ## Personnalisation
 
-### Modifier les informations affichees
+### Modifier les informations affichées
 
 - Hero : `src/components/Hero.tsx`
-- A propos : `src/components/About.tsx`
-- Competences : `src/components/Skills.tsx`
+- À propos : `src/components/About.tsx`
+- Compétences : `src/components/Skills.tsx`
 - Certifications : `src/components/Certifications.tsx`
-- Experiences : `src/components/Experiences.tsx`
+- Expériences : `src/components/Experiences.tsx`
 - Projets : `src/lib/data/projects.json`
-- Metadonnees SEO : `src/app/layout.tsx`
+- Métadonnées SEO : `src/app/layout.tsx`
 
 ### Modifier le style global
 
-Les couleurs, polices et classes utilitaires principales se trouvent dans :
+Les couleurs, les polices et les classes utilitaires principales se trouvent dans :
 
 `src/app/globals.css`
 
 ### Images
 
-Les images locales du portfolio sont stockees dans `public/`.
+Les images locales du portfolio sont stockées dans `public/`.
 
 Le projet autorise aussi les images distantes provenant de `images.unsplash.com` via la configuration Next.js.
 
 ## Points d'attention
 
-- Le bouton de telechargement du CV pointe vers `/cv.pdf`. Il faut ajouter ce fichier dans `public/` si vous voulez que le lien fonctionne.
-- Les icones sociales du footer pointent actuellement vers `#` et peuvent etre remplacees par les vrais profils.
-- Les messages du formulaire sont ecrits dans un fichier JSON local, ce qui peut poser des limites en hebergement serverless ou multi-utilisateur.
+- Le bouton de téléchargement du CV pointe vers `/cv.pdf`. Il faut ajouter ce fichier dans `public/` si vous voulez que le lien fonctionne.
+- Les icônes sociales du footer pointent actuellement vers `#` et peuvent être remplacées par les vrais profils.
+- Les messages du formulaire sont écrits dans un fichier JSON local, ce qui peut poser des limites en hébergement serverless ou multi-utilisateur.
 
-## Deploiement
+## Déploiement
 
-Le projet peut etre deploye sur Vercel ou toute plateforme compatible avec Next.js.
+Le projet peut être déployé sur Vercel ou toute autre plateforme compatible avec Next.js.
 
-Pour une mise en production plus robuste, il est conseille de :
+Pour une mise en production plus robuste, il est conseillé de :
 
-- brancher le formulaire a une base de donnees ou un service email
+- brancher le formulaire à une base de données ou à un service d'email
 - ajouter les vrais liens sociaux
 - ajouter le CV dans `public/cv.pdf`
-- completer eventuellement les metadonnees Open Graph
+- compléter éventuellement les métadonnées Open Graph
 
 ## Auteur
 
 Samuel Sean Fotsing Tagatsing
 
-Portfolio oriente Software Engineering, Full Stack et Intelligence Artificielle.
+Portfolio orienté Software Engineering, Full Stack et Intelligence Artificielle.

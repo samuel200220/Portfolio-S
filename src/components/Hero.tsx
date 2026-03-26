@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const words = [
-  "Etudiant Ingenieur @ ENSPY",
+  "Étudiant ingénieur @ ENSPY",
   "Passionné par l'IA",
-  "Developpeur Fullstack",
+  "Développeur Full Stack",
   "Samuel Sean Fotsing Tagatsing",
 ];
 
@@ -58,7 +58,7 @@ export default function Hero() {
             transition={{ duration: 2.4, repeat: Infinity, ease: "easeInOut" }}
             className="inline-block h-2 w-2 rounded-full bg-neon-blue"
           />
-          Disponible pour creer des produits utiles
+          Disponible pour créer des produits utiles
         </motion.div>
 
         <motion.h1
@@ -76,8 +76,8 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="mx-auto mb-8 max-w-2xl text-base leading-relaxed text-zinc-400 md:text-lg"
         >
-          Je concois des experiences web epurees, performantes et expressives, avec un interet fort pour
-          l'intelligence artificielle et l'ingenierie logicielle.
+          Je conçois des expériences web épurées, performantes et expressives, avec un intérêt fort pour
+          l'intelligence artificielle et l'ingénierie logicielle.
         </motion.p>
 
         <div className="mb-10 flex h-12 items-center justify-center md:h-16">
@@ -127,7 +127,7 @@ export default function Hero() {
             href="/cv.pdf"
             className="rounded-full border border-white/15 bg-white/5 px-6 py-3 font-mono text-sm uppercase tracking-[0.22em] transition-all hover:border-white/25 hover:bg-white/10"
           >
-            Telecharger CV
+            Télécharger le CV
           </motion.a>
         </motion.div>
       </div>

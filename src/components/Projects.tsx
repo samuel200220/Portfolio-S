@@ -41,8 +41,8 @@ export default function Projects() {
             <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-mono uppercase tracking-[0.24em] text-neon-blue/80">
               <Sparkles size={14} /> Selected Work
             </div>
-            <h2 className="mb-2 text-3xl font-bold glow-text md:text-4xl">Projets Selectionnes</h2>
-            <p className="max-w-2xl text-zinc-500">Solutions innovantes, interfaces maitrisées et realisations techniques orientees impact.</p>
+            <h2 className="mb-2 text-3xl font-bold glow-text md:text-4xl">Projets sélectionnés</h2>
+            <p className="max-w-2xl text-zinc-500">Solutions innovantes, interfaces maîtrisées et réalisations techniques orientées impact.</p>
           </div>
           <motion.a whileHover={{ x: 4 }} href="https://github.com/samuel200220/" target="_blank" rel="noopener noreferrer" className="text-sm font-mono text-neon-blue hover:underline">
             Voir tout sur GitHub &rarr;

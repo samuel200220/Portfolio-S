@@ -6,18 +6,18 @@ import { Briefcase, Zap, HeartPulse, Sparkles } from "lucide-react";
 const experiences = [
   {
     type: "Stage",
-    role: "Developpeur Fullstack",
-    company: "Projet Academique",
+    role: "Développeur Full Stack",
+    company: "Projet académique",
     date: "2025",
-    desc: "Developpement d'un calculateur de tarifs urbains (Fare Calculator).",
+    desc: "Développement d'un calculateur de tarifs urbains (Fare Calculator).",
     icon: Briefcase,
   },
   {
     type: "Hackathon",
-    role: "IA Sante",
+    role: "IA santé",
     company: "Hackathon 2025",
     date: "2025",
-    desc: "Chatbot medical, gestion des patients et prevision de stock de sang.",
+    desc: "Chatbot médical, gestion des patients et prévision de stock de sang.",
     icon: HeartPulse,
   },
   {
@@ -45,8 +45,8 @@ export default function Experiences() {
           <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-mono uppercase tracking-[0.24em] text-neon-blue/80">
             <Sparkles size={14} /> Journey
           </div>
-          <h2 className="mb-4 text-3xl font-bold uppercase tracking-tight glow-text md:text-4xl">Experiences & Hackathons</h2>
-          <p className="mx-auto max-w-2xl text-zinc-500">Quelques experiences structurantes qui ont renforce ma pratique produit, data et execution technique.</p>
+          <h2 className="mb-4 text-3xl font-bold uppercase tracking-tight glow-text md:text-4xl">Expériences & Hackathons</h2>
+          <p className="mx-auto max-w-2xl text-zinc-500">Quelques expériences structurantes qui ont renforcé ma pratique produit, data et exécution technique.</p>
         </motion.div>
 
         <div className="mx-auto max-w-4xl space-y-10">

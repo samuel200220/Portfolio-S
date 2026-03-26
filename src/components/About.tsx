@@ -7,19 +7,19 @@ import { GraduationCap, MapPin, Calendar, Sparkles } from "lucide-react";
 const education = [
   {
     year: "2022 - 2027",
-    title: "Cycle Ingenieur en Genie Informatique",
-    institution: "ENSPY (Ecole Nationale Superieure Polytechnique de Yaounde)",
-    desc: "Formation d'excellence en ingenierie, algorithmique et systemes complexes.",
+    title: "Cycle ingénieur en génie informatique",
+    institution: "ENSPY (École nationale supérieure polytechnique de Yaoundé)",
+    desc: "Formation d'excellence en ingénierie, algorithmique et systèmes complexes.",
   },
   {
     year: "2022",
-    title: "Baccalaureat Serie C (Mention Bien)",
-    institution: "College Vogt",
-    desc: "Specialisation en Mathematiques et Physique.",
+    title: "Baccalauréat série C (Mention Bien)",
+    institution: "Collège Vogt",
+    desc: "Spécialisation en mathématiques et physique.",
   },
 ];
 
-const highlights = ["Genie logiciel", "IA", "Architecture", "UX epuree"];
+const highlights = ["Génie logiciel", "IA", "Architecture", "UX épurée"];
 
 export default function About() {
   return (
@@ -76,11 +76,11 @@ export default function About() {
               <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-mono uppercase tracking-[0.24em] text-neon-blue/80">
                 <Sparkles size={14} /> Profil
               </div>
-              <h2 className="mb-4 inline-block text-3xl font-bold glow-text md:text-4xl">A propos de moi</h2>
+              <h2 className="mb-4 inline-block text-3xl font-bold glow-text md:text-4xl">À propos de moi</h2>
               <p className="mb-6 leading-relaxed text-zinc-400">
-                Etudiant ingenieur passionné par l'intersection entre le genie logiciel et l'intelligence artificielle.
-                Base a <span className="text-white">Yaounde, Cameroun</span>, je construis des experiences numeriques
-                robustes, utiles et visuellement maitrisees.
+                Étudiant ingénieur passionné par l'intersection entre le génie logiciel et l'intelligence artificielle.
+                Basé à <span className="text-white">Yaoundé, Cameroun</span>, je construis des expériences numériques
+                robustes, utiles et visuellement maîtrisées.
               </p>
               <div className="mb-6 flex flex-wrap justify-center gap-3 md:justify-start">
                 {highlights.map((item, idx) => (
@@ -99,7 +99,7 @@ export default function About() {
               </div>
               <div className="flex flex-wrap justify-center gap-4 md:justify-start">
                 <motion.div whileHover={{ y: -2 }} className="flex items-center gap-2 text-sm text-zinc-500">
-                  <MapPin size={16} className="text-neon-blue" /> Yaounde, Cameroun
+                  <MapPin size={16} className="text-neon-blue" /> Yaoundé, Cameroun
                 </motion.div>
                 <motion.div whileHover={{ y: -2 }} className="flex items-center gap-2 text-sm text-zinc-500">
                   <GraduationCap size={16} className="text-neon-blue" /> ENSPY (2022-2027)

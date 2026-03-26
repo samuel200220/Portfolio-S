@@ -9,7 +9,7 @@ const certifications = [
     title: "Supervised Machine Learning: Regression and Classification",
     issuer: "DeepLearning.AI x Stanford Online",
     year: "Nov 2025",
-    status: "Validee",
+    status: "Validée",
     image: "/machine_learning.jpeg",
     accent: "from-cyan-400/25 via-cyan-400/5 to-transparent",
     skills: ["Machine Learning", "Regression", "Classification"],
@@ -18,7 +18,7 @@ const certifications = [
     title: "Advanced Learning Algorithms",
     issuer: "DeepLearning.AI x Stanford Online",
     year: "Jan 2026",
-    status: "Validee",
+    status: "Validée",
     image: "/1.png",
     accent: "from-fuchsia-400/25 via-fuchsia-400/5 to-transparent",
     skills: ["Neural Networks", "Deep Learning", "Training"],
@@ -27,7 +27,7 @@ const certifications = [
     title: "Unsupervised Learning, Recommenders, Reinforcement Learning",
     issuer: "DeepLearning.AI x Stanford Online",
     year: "Mar 2026",
-    status: "Validee",
+    status: "Validée",
     image: "/2.png",
     accent: "from-emerald-400/25 via-emerald-400/5 to-transparent",
     skills: ["Clustering", "Recommenders", "Reinforcement Learning"],
@@ -36,7 +36,7 @@ const certifications = [
     title: "Machine Learning Specialization",
     issuer: "Coursera x Stanford Online",
     year: "Mar 2026",
-    status: "Specialisation complete",
+    status: "Spécialisation complète",
     image: "/3.png",
     accent: "from-violet-400/25 via-violet-400/5 to-transparent",
     skills: ["ML Foundations", "Supervised", "Unsupervised"],
@@ -87,7 +87,7 @@ export default function Certifications() {
           </div>
           <h2 className="mb-4 text-3xl font-bold glow-text md:text-5xl">Certifications</h2>
           <p className="mx-auto max-w-3xl leading-relaxed text-zinc-400">
-            Mes certifications reelles en machine learning, avec les certificats affiches directement pour mettre en valeur le parcours complet.
+            Mes certifications réelles en machine learning, avec les certificats affichés directement pour mettre en valeur le parcours complet.
           </p>
         </motion.div>
 
